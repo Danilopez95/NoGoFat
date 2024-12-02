@@ -1,0 +1,119 @@
+/* Colores:
+#012030 Azul marino
+#13678A Azul mas claro
+#45C4B0 Verde azulado
+*/
+
+
+.flexbox{
+    width: 99%;
+    height: 1000px;
+    margin: auto;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: normal;
+}
+
+.logomenu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: stretch;
+    width: 95%;
+    height: 250px;
+    background-color: pink;
+    margin-left: 2.5%;
+    border: 1px black solid;
+}
+
+.verticalcontenido{
+    display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: normal;
+  width: 97.5%;
+  background-color: lightblue;
+  height: 800px;
+  margin-top: 1%;
+}
+.menuhorizontal{
+    width: 80%;
+    border: 1px black solid;
+    height: 250px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 15%;
+    border: 1px black solid;
+    height: 250px;
+}
+.logo img{
+    max-width: 100%;
+    height: 250px;
+    border-radius: 70%;
+    margin: auto;
+    justify-content: center;
+}
+
+.buscador {
+    width: 70%;
+    border: 1px black solid;
+    display: flexbox;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.buscador input{
+    width: 100%;
+    height: 50px;
+    font-size: 30px
+    
+}
+
+.buscador button{
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buscador button:hover{
+    background-color: #45c4b0;
+}
+
+.formulario{
+    width: 10%;
+    margin: auto;
+    margin-left: 3%;
+}
+.compraventa{
+    width: 10%;
+    margin: auto;
+}
+.login{
+    width: 10%;
+    margin: auto;
+    height: auto;
+    a{
+        font-size: 40px;
+        color: #012030;
+    }
+    a:hover{
+        color:#13678A ;
+    }
+}
