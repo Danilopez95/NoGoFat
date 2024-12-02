@@ -95,3 +95,25 @@
 .buscador button:hover{
     background-color: #45c4b0;
 }
+
+.formulario{
+    width: 10%;
+    margin: auto;
+    margin-left: 3%;
+}
+.compraventa{
+    width: 10%;
+    margin: auto;
+}
+.login{
+    width: 10%;
+    margin: auto;
+    height: auto;
+    a{
+        font-size: 40px;
+        color: #012030;
+    }
+    a:hover{
+        color:#13678A ;
+    }
+}
