@@ -4,10 +4,13 @@
 #45C4B0 Verde azulado
 */
 
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
 
 .flexbox{
     width: 99%;
-    height: 1000px;
+    height: auto;
     margin: auto;
     background-color: gray;
     display: flex;
@@ -25,7 +28,7 @@
     align-items: flex-start;
     align-content: stretch;
     width: 95%;
-    height: 250px;
+    height: 150px;
     background-color: pink;
     margin-left: 2.5%;
     border: 1px black solid;
@@ -46,34 +49,38 @@
 .menuhorizontal{
     width: 80%;
     border: 1px black solid;
-    height: 250px;
+    height: 150px;
     margin: auto;
     display: flex;
     justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
 }
 
 .logo {
     width: 15%;
     border: 1px black solid;
-    height: 250px;
+    height: 100%;
 }
 .logo img{
     max-width: 100%;
-    height: 250px;
+    height: 100%;
     border-radius: 70%;
     margin: auto;
+    display: flex;
     justify-content: center;
 }
-
+.logo img:hover{
+    transform: scale(1.2);
+    transition-duration: 100ms;
+}
 .buscador {
     width: 70%;
     border: 1px black solid;
-    display: flexbox;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    
 
 }
 
@@ -87,7 +94,6 @@
 .buscador button{
     width: 100%;
     height: 40px;
-    margin: auto;
     font-size: 20px;
     font-weight: bold;
 }
@@ -95,25 +101,48 @@
 .buscador button:hover{
     background-color: #45c4b0;
 }
+a{
+    font-size: 25px;
+    color: #012030;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+a:hover{
+    color:#13678A ;
+    transform: scale(1.3);
+    transition-duration: 100ms;
+}
+
+a:visited{
+    color:#13678A ;
+}
 
 .formulario{
     width: 10%;
-    margin: auto;
-    margin-left: 3%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    border: 1px black solid;
 }
 .compraventa{
     width: 10%;
-    margin: auto;
+    border: 1px solid black;
+    height: auto;
+    display: flex;
+    justify-content: center;
 }
 .login{
     width: 10%;
-    margin: auto;
     height: auto;
+    border: solid black 1px;
+    display: flex;
     a{
-        font-size: 40px;
-        color: #012030;
+        font-size: 60px;
     }
-    a:hover{
-        color:#13678A ;
+    em{
+        font-size: 30px;
     }
+   
+
 }
