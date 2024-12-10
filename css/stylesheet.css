@@ -42,19 +42,19 @@ body{
   align-items: stretch;
   width: 97.5%;
   background-color: lightblue;
-  height: 800px;
+  height: auto;
+  max-height: 3000px;
   margin-top: 1%;
 }
 .menuhorizontal{
     width: 80%;
     border: 1px black solid;
     height: 150px;
-    margin: auto;
+    justify-content: space-evenly;
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
     align-items: center;
-    align-content: center;
+    margin: auto;
+    flex-direction: row;
 }
 
 .logo {
@@ -107,10 +107,10 @@ a{
     text-align: center;
 }
 a:hover{
-    color:#13678A ;
+   color:#13678A ;
     transform: scale(1.1);
     transition-duration: 300ms;
-}
+} 
 
 a:visited{
     color:#13678A ;
@@ -152,24 +152,36 @@ a:visited{
 
 .menuvertical{
     display: flex;
-    justify-content: space-around;
-    width: 20.8%;
+    align-items: normal;
+    justify-content: left;
+    width: 18%;
     border: 1px solid black;
+    margin-left: 2.7%;
 }
 
-
-.categorias div{
-    display: none;
+.categorias a{
+    color: black
+}
+.categorias a:hover{
+    color:#13678A ;
+    transform: scale(1.1);
+    transition-duration: 300ms;
+}
+.categorias h2:hover{
+    transform: scale(1.1);
+    transition-duration: 300ms;
+}
+.categorias ul{
+    list-style: none;
 }
 
-.categorias h2{
-    display: block;
+.categorias h1{
+    font-size: 50px;
 }
-
-.categorias h1:hover{
-    transition: .3s all ease-in;
+.categorias a{
+    font-size: 30px;
 }
-
-.categorias h1:target{
-    transition: .3s all ease-in;
-}
+ .contenido{
+    width: fit-content;
+    height: auto;
+ }
