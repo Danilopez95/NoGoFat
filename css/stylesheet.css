@@ -182,6 +182,116 @@ a:visited{
     font-size: 30px;
 }
  .contenido{
-    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    border: 1px solid black;
     height: auto;
+    iframe{
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
+ }
+.iniciodiv{
+    width: 90%;
+    margin: auto;
+    margin-top: 2%;
+}
+ .inicio{
+    font-size: large;
+    font-weight: 500;
+
+    
+ }
+
+ .componentes{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: 150px;
+    border: 4px solid white;
+    border-radius: 5px;
+    border-collapse: collapse;
+    div{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        border-collapse: collapse;
+        border: 2px solid white;
+    }
+    
+    }
+    div:hover{
+        
+        border-collapse: collapse;
+        transition-duration: 100ms;
+    }
+
+ .componentes a:hover{
+    transform: scale(1.1);
+ }
+
+ .portatiles{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: 150px;
+    border: 4px solid white;
+    border-radius: 5px;
+    border-collapse: collapse;
+div{
+    width: 40%;
+    height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        border-collapse: collapse;
+        border: 2px solid white;
+}
+ }
+ .portatiles a:hover{
+    transform: scale(1.5);
+ }
+
+ .sobremesa {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: 150px;
+    border: 4px solid white;
+    border-radius: 5px;
+    border-collapse: collapse;
+    div{
+        width: 50%;
+        height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            border-collapse: collapse;
+            border: 2px solid white; 
+    }
+ }
+
+ .sobremesa a:hover{
+    transform: scale(1.7);
  }
