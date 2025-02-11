@@ -5,23 +5,64 @@
 */
 
 
-
-
-
-
-
 body {
     background-image: url('https://wallpapers.com/images/hd/glowing-blue-chip-hd-computer-yq6y883ilofzggjz.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     font-size: large;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+    height: 1000px;
+    width: 100%;
+}
+
+.flexboxAlvaro{
+    display: flex;
+    width: 99%;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+}
+.calendario{
+    margin: auto;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    display: flex;
-    color: rgb(225, 132, 19);
-    margin: 0;
-    position: relative;
+    width: 60%;
+    height: 60%;
+    background-color: beige;
+    table{
+        width: 100%;
+        height: 100%;
+        border: 1px black solid;
+    }
+}
+
+.calendario tr{
+    text-align: center;
+    td{
+        border: 1px black solid;
+    }
+    td:hover{
+        background-color: pink;
+    }
+}
+
+#mes{
+    background-color: pink;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.calendario button{
+    all: unset; /* Elimina todos los estilos por defecto */ /*Esto si es del gpt que no me salia para quitar toda la mierda al boton*/
+    display: inline-block; /* Mantiene el botón visible */
+    cursor: pointer; /* Mantiene el puntero de clic */
+    width: 100%;
+    height: 100%;
+}
+#depende{
+  
 }
 
