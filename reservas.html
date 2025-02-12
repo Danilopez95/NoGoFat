@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas del Gimnasio</title>
+    <link rel="stylesheet" href="reservas.css">
+</head>
+<body>
+    <header>
+        <div class="logo">NOGOFAT</div>
+        <nav>
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">RESERVAS</a></li>
+                <li><a href="#">CLASES</a></li>
+                <li><a href="#">CALENDARIO</a></li>
+                <li><a href="#" class="login">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="reservation-form">
+            <h2>Reserva tu Clase</h2>
+            <form>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="class">Clase</label>
+                <select id="class" name="class" required>
+                    <option value="yoga">Yoga</option>
+                    <option value="pilates">Pilates</option>
+                    <option value="spinning">Spinning</option>
+                    <option value="zumba">Zumba</option>
+                </select>
+
+                <label for="date">Fecha</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Hora</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Reservar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Gimnasio Fitness</p>
+    </footer>
+</body>
+</html>
+
