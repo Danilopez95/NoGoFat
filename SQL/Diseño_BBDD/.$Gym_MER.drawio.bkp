@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.2 Chrome/134.0.6998.178 Electron/35.1.2 Safari/537.36" version="26.2.2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2943" dy="943" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2291" dy="943" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -47,7 +47,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="IUSfPW5hDYVbG_dR-f5i-81" value="tiene" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;fillColor=#f8cecc;strokeColor=#b85450;rounded=0;shadow=1;glass=0;fontStyle=1;labelBackgroundColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="64" y="180" width="80" height="80" as="geometry" />
+          <mxGeometry x="61" y="170" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="IUSfPW5hDYVbG_dR-f5i-85" value="HORARIO" style="whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=0;shadow=1;glass=0;gradientColor=#7ea6e0;fontStyle=1;labelBackgroundColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="315" y="180" width="120" height="60" as="geometry" />
@@ -396,9 +396,9 @@
           <mxGeometry x="-109" y="290" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="BpmtkkD9mat_lBKwqPm8-82" value="[1:N]" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontSize=16;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="71" y="142" width="60" height="30" as="geometry" />
+          <mxGeometry x="71" y="130" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="BpmtkkD9mat_lBKwqPm8-83" value="ID_Horario" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=16;fontColor=default;fontStyle=1;labelBackgroundColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="BpmtkkD9mat_lBKwqPm8-83" value="ID_Monitor" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=16;fontColor=default;fontStyle=1;labelBackgroundColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="524" y="140" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="BpmtkkD9mat_lBKwqPm8-86" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontColor=default;labelBackgroundColor=none;startFill=0;endArrow=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="BpmtkkD9mat_lBKwqPm8-84" target="IUSfPW5hDYVbG_dR-f5i-85" edge="1">
