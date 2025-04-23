@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="479.0" prefWidth="574.0" xmlns="http://javafx.com/javafx/24" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.desktopapp.HelloController">
+   <children>
+      <Button fx:id="btnAdrian" layoutX="26.0" layoutY="31.0" mnemonicParsing="false" onAction="#onPressedAdrian" prefHeight="43.0" prefWidth="111.0" text="Adrián">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnManuel" layoutX="176.0" layoutY="31.0" mnemonicParsing="false" onAction="#onPressedManuel" prefHeight="43.0" prefWidth="111.0" text="Manuel">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAlvaro" layoutX="26.0" layoutY="109.0" mnemonicParsing="false" onAction="#onPressedAlvaro" prefHeight="43.0" prefWidth="111.0" text="Álvaro">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAguila" layoutX="449.0" layoutY="32.0" mnemonicParsing="false" onAction="#onPressedAguila" prefHeight="43.0" prefWidth="111.0" text="Jose Enrique" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDaniel" layoutX="309.0" layoutY="31.0" mnemonicParsing="false" onAction="#onPressedDaniel" prefHeight="43.0" prefWidth="111.0" text="Daniel">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
