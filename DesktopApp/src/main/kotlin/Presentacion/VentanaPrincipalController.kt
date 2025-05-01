@@ -49,4 +49,8 @@ class VentanaPrincipalController {
     fun inicializar(){
 
     }
+
+    fun cargarTablas(){
+
+    }
 }
