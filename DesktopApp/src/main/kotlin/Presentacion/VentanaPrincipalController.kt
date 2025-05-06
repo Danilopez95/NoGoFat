@@ -1,5 +1,8 @@
 package Presentacion
 
+import BBDD.TablaDAOImple
+import Negocio.Tabla
+import javafx.collections.FXCollections
 import javafx.event.ActionEvent
 import javafx.fxml.FXML
 import javafx.fxml.FXMLLoader
@@ -20,7 +23,7 @@ class VentanaPrincipalController {
     private lateinit var btnSelects: Button
 
     @FXML
-    private lateinit var comboTablas: ComboBox<Any>
+    private lateinit var comboTablas: ComboBox<Tabla>
 
     @FXML
     private lateinit var fieldTabla: TextArea
@@ -48,5 +51,9 @@ class VentanaPrincipalController {
     }
     fun inicializar(){
 
+    }
+    fun cargarTablas(){
+            val lista = FXCollections.observableArrayList(TablaDAOImple.getAllTablas())
+            comboTablas.items = lista
     }
 }
