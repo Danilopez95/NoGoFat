@@ -38,9 +38,11 @@ class VentanaPrincipalController {
     fun onSelectsPressed(event: ActionEvent) {
         try {
             val loader =
-                FXMLLoader(SelectsController::class.java.getResource
-                    ("/org/example/desktopapp/selects-view.fxml"))
-            val root:Parent = loader.load()
+                FXMLLoader(
+                    SelectsController::class.java.getResource
+                        ("/org/example/desktopapp/selects-view.fxml")
+                )
+            val root: Parent = loader.load()
             val stage = Stage()
             stage.title = "Selects alumnos"
             stage.scene = Scene(root)
@@ -49,17 +51,14 @@ class VentanaPrincipalController {
             e.printStackTrace()
         }
     }
-    fun inicializar(){
 
+    fun initialize() {
+        cargarTablas()
     }
-<<<<<<< HEAD
-    fun cargarTablas(){
-            val lista = FXCollections.observableArrayList(TablaDAOImple.getAllTablas())
-            comboTablas.items = lista
-=======
 
-    fun cargarTablas(){
+    fun cargarTablas() {
+        val lista = FXCollections.observableArrayList(TablaDAOImple.getAllTablas())
+        comboTablas.items = lista
 
->>>>>>> 023474607f6e6b9a743418c5c48cd64a9cf5cab8
     }
 }

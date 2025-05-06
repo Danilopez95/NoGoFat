@@ -1,13 +1,11 @@
 package BBDD
 import java.sql.*
 
-
-
-class ConexionBD {
+class ConexionBBDD {
     val url = "jdbc:mysql://localhost/supermercado"
     val user = "root"
     val password = ""
-    var  conn: Connection? = null
+    var conn: Connection? = null
 
 
 
@@ -38,6 +36,11 @@ class ConexionBD {
     fun getPreparedStatement(sql: String): PreparedStatement? {
         return conn?.prepareStatement(sql)
     }
+
 }
+
+
+
+
 
 
