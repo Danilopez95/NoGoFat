@@ -4,7 +4,17 @@
 #45C4B0 Verde azulado
 */
 
-
+.bodylogin {
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    color: #45C4B0;
+    margin: 0;
+    position: relative; /* Para posicionar el selector de idiomas */
+}
 body {
     background-image: url('../img/NOGOFAT_012.png');
     background-repeat: no-repeat;
@@ -132,3 +142,78 @@ nav ul li a {
     font-weight: bold;
     
 }
+
+.Selector {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.selector select {
+    padding: 10px;
+    font-size: medium;
+    background-color: rgba(62, 55, 55, 0.8);
+    border: 1.5px solid #13678A;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(29, 26, 26, 0.864);
+    border-radius: 25px;
+    box-shadow: 0 4px 8px black;
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    color: #45C4B0;
+}
+
+.campo {
+    background-color: rgb(62, 55, 55);
+    padding: 0.5%;
+    border-radius: 10px;
+    border: 1.5px solid;
+    margin-bottom: 15px;
+}
+
+.campo input {
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #13678A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+}
+
+button:hover {
+    background-color: #45C4B0;
+}
+
