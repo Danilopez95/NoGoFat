@@ -3,7 +3,7 @@ package BBDD
 import Negocio.Tabla
 import Utilities.*
 object TablaDAOImple:TablaDAO {
-    private val conexion = ConexionBD()
+    private val conexion = ConexionBBDD()
 
     override fun getAllTablas(): List<Tabla> {
         conexion.conectar()
@@ -11,8 +11,9 @@ object TablaDAOImple:TablaDAO {
         val rs = ps?.executeQuery()
         var tabla: Tabla? = null
         var tablas = mutableListOf<Tabla>()
-        if (rs?.next() == true) {
-           tabla = Tabla(rs.getString("Nombre"))
+       while (rs?.next() == true) {
+            val nombreTabla = rs.getString(1)
+            tablas.add(Tabla(nombreTabla))
         }
         ps?.close()
         conexion.desconectar()
