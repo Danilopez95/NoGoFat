@@ -4,25 +4,143 @@
 #45C4B0 Verde azulado
 */
 
-
-
-
-
-
-
-body {
-    background-image: url('https://wallpapers.com/images/hd/glowing-blue-chip-hd-computer-yq6y883ilofzggjz.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+.bodylogin {
     font-size: large;
     font-family: Georgia, 'Times New Roman', Times, serif;
     justify-content: center;
     align-items: center;
     height: 100vh;
     display: flex;
-    color: rgb(225, 132, 19);
+    color: #45C4B0;
     margin: 0;
+    position: relative; /* Para posicionar el selector de idiomas */
+}
+body {
+    background-image: url('../img/NOGOFAT_012.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+    height: 1000px;
+    width: 100%;
+    color: #fff;
+}
+
+.flexboxAlvaro{
+    display: flex;
+    width: 99%;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+}
+.calendario{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 60%;
+    background-color: beige;
+    table{
+        width: 100%;
+        height: 100%;
+        border: 1px black solid;
+    }
+}
+
+.calendario tr{
+    text-align: center;
+    td{
+        border: 1px black solid;
+    }
+    td:hover{
+        background-color: pink;
+    }
+}
+
+#mes{
+    background-color: pink;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.calendario button{
+    all: unset; /* Elimina todos los estilos por defecto */ /*Esto si es del gpt que no me salia para quitar toda la mierda al boton*/
+    display: inline-block; /* Mantiene el botón visible */
+    cursor: pointer; /* Mantiene el puntero de clic */
+    width: 100%;
+    height: 100%;
+}
+#depende{
+  
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+}
+.logo {
+    font-size: 40px;
+    
+    color: #ff66cc;
+    margin-left: 30px;
+}
+nav ul {
+    list-style: none;
+    
+    display: flex;
+    margin: 20px;
+    padding: 0;
+}
+nav ul li {
+    margin-left: 40px;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+.login {
+    background: #ff66cc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #000 !important;
+}
+.pagina1 {
     position: relative;
+    height: 86vh;
+    background: url('../img/NOGOFAT_012.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(41, 0, 37, 0.6);
+}
+.contenido {
+    position: relative;
+    z-index: 1;
+}
+.frasemotivadora {
+    font-size: 30px;
+    border: 4px solid white;
+    padding: 30px;
+    display: inline-block;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
 }
 
 .Selector {
@@ -31,11 +149,11 @@ body {
     right: 10px;
 }
 
-.Selector select {
+.selector select {
     padding: 10px;
     font-size: medium;
     background-color: rgba(62, 55, 55, 0.8);
-    border: 1.5px solid rgb(225, 132, 19);
+    border: 1.5px solid #13678A;
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
@@ -53,10 +171,10 @@ body {
 
 .container h1 {
     margin-bottom: 20px;
-    color: rgb(225, 132, 19);
+    color: #45C4B0;
 }
 
-.correo, .contraseña {
+.campo {
     background-color: rgb(62, 55, 55);
     padding: 0.5%;
     border-radius: 10px;
@@ -64,7 +182,7 @@ body {
     margin-bottom: 15px;
 }
 
-.correo2 {
+.campo input {
     width: 95%;
     padding: 10px;
     font-size: 16px;
@@ -74,7 +192,7 @@ body {
     outline: none;
 }
 
-input[type="email"], input[type="password"] {
+input[type="text"], input[type="email"], input[type="password"] {
     background-color: transparent;
     color: #fff;
     border: none;
@@ -87,7 +205,7 @@ input[type="email"], input[type="password"] {
 button {
     width: 100%;
     padding: 10px;
-    background-color: rgb(225, 132, 19);
+    background-color: #13678A;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -96,5 +214,6 @@ button {
 }
 
 button:hover {
-    background-color: rgb(200, 117, 17);
+    background-color: #45C4B0;
 }
+

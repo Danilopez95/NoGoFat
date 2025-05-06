@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    
+</head>
+<body>
+    <div class="flexboxAlvaro">
+        <div class="calendario">
+            <table>
+                <tr>
+                    <td><button onclick="mesAtras()"><</button></td>
+                    <td colspan="5" id="mes">Febrero</td>
+                    <td><button onclick="mesAdelante()">></button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                </tr>
+                <tr id="depende">
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+        //Este script es 20% mio 80% gpt que estoy empezando
+        //Voy a ver si consigo que cambien los dias segun el mes
+        
+        const meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+        
+        let mesActual = (new Date().getMonth()); // Mes actual (0-11)
+        actualizarMes()
+        function actualizarMes() {
+            document.getElementById("mes").innerText = meses[mesActual];
+            if (meses[mesActual] !== "Febrero"){
+                document.getElementById("depende").style.display="table-row"
+            }else{
+                document.getElementById("depende").style.display="none"
+            }
+        }
+
+        function mesAtras() {
+            mesActual = (mesActual - 1 + 12) % 12; // Evita valores fuera del rango 0-11
+          
+            if (meses[mesActual] !== "Febrero"){
+                document.getElementById("depende").style.display="table-row"
+            }else{
+                document.getElementById("depende").style.display="none"
+            }
+            actualizarMes();
+        }
+//Y conseguido, el codigo de actualizar el calendario es 80% mio 20% gpt vamos mejorando
+        function mesAdelante() {
+            mesActual = (mesActual + 1) % 12; // Avanza un mes y vuelve a 0 después de 11
+            if (meses[mesActual] !== "Febrero"){
+                document.getElementById("depende").style.display="table-row"
+            }else{
+                document.getElementById("depende").style.display="none"
+            }
+            actualizarMes();
+        }
+        window.onload = actualizarMes;
+    </script>
+</body>
+</html>
