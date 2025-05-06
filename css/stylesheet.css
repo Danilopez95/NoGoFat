@@ -6,7 +6,7 @@
 
 
 body {
-    background-image: url('https://wallpapers.com/images/hd/glowing-blue-chip-hd-computer-yq6y883ilofzggjz.jpg');
+    background-image: url('../img/NOGOFAT_012.png');
     background-repeat: no-repeat;
     background-size: cover;
     font-size: large;
@@ -14,6 +14,7 @@ body {
     margin: auto;
     height: 1000px;
     width: 100%;
+    color: #fff;
 }
 
 .flexboxAlvaro{
@@ -66,3 +67,68 @@ body {
   
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+}
+.logo {
+    font-size: 40px;
+    
+    color: #ff66cc;
+    margin-left: 30px;
+}
+nav ul {
+    list-style: none;
+    
+    display: flex;
+    margin: 20px;
+    padding: 0;
+}
+nav ul li {
+    margin-left: 40px;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+.login {
+    background: #ff66cc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #000 !important;
+}
+.pagina1 {
+    position: relative;
+    height: 86vh;
+    background: url('../img/NOGOFAT_012.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(41, 0, 37, 0.6);
+}
+.contenido {
+    position: relative;
+    z-index: 1;
+}
+.frasemotivadora {
+    font-size: 30px;
+    border: 4px solid white;
+    padding: 30px;
+    display: inline-block;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
