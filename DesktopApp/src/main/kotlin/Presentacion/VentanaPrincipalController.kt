@@ -52,8 +52,14 @@ class VentanaPrincipalController {
     fun inicializar(){
 
     }
+<<<<<<< HEAD
     fun cargarTablas(){
             val lista = FXCollections.observableArrayList(TablaDAOImple.getAllTablas())
             comboTablas.items = lista
+=======
+
+    fun cargarTablas(){
+
+>>>>>>> 023474607f6e6b9a743418c5c48cd64a9cf5cab8
     }
 }
