@@ -9,8 +9,8 @@ import Presentacion.*
 class HelloApplication : Application() {
     override fun start(stage: Stage) {
         val fxmlLoader = FXMLLoader(HelloApplication::class.java.getResource("ventanaPrincipal-view.fxml"))
-        val scene = Scene(fxmlLoader.load(), 800.0, 800.0)
-        stage.title = "Bienvenido"
+        val scene = Scene(fxmlLoader.load(), 600.0, 600.0)
+        stage.title = "Fran guapo"
         stage.scene = scene
         stage.show()
     }

@@ -2,10 +2,10 @@ package BBDD
 import java.sql.*
 
 class ConexionBBDD {
-    val url = "jdbc:mysql://localhost/supermercadi"
+    val url = "jdbc:mysql://localhost/supermercado"
     val user = "root"
     val password = ""
-    var conn: Connection? = null
+   lateinit var conn: Connection
 
 
 
@@ -23,18 +23,18 @@ class ConexionBBDD {
 
     fun desconectar() {
         try {
-            conn?.close()
+            conn.close()
         } catch (e: SQLException) {
             e.printStackTrace()
         }
     }
 
-    fun getStatement(): Statement? {
-        return conn?.createStatement()
+    fun getStatement(): Statement {
+        return conn.createStatement()
     }
 
-    fun getPreparedStatement(sql: String): PreparedStatement? {
-        return conn?.prepareStatement(sql)
+    fun getPreparedStatement(sql: String): PreparedStatement {
+        return conn.prepareStatement(sql)
     }
 
 }

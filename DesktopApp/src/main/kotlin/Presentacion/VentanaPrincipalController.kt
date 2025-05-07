@@ -1,5 +1,6 @@
 package Presentacion
 
+import BBDD.TablaDAO
 import BBDD.TablaDAOImple
 import Negocio.Tabla
 import javafx.collections.FXCollections
@@ -54,6 +55,12 @@ class VentanaPrincipalController {
 
     fun initialize() {
         cargarTablas()
+        comboTablas.setOnAction {
+            var seleccion = comboTablas.selectionModel.selectedItem
+            if (seleccion != null){
+                fieldTabla.text = TablaDAOImple.selectAllFrom(seleccion.toString()).joinToString("\n")
+            }
+        }
     }
 
     fun cargarTablas() {
