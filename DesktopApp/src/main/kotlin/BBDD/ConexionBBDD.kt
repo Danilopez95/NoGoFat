@@ -2,7 +2,7 @@ package BBDD
 import java.sql.*
 
 class ConexionBBDD {
-    val url = "jdbc:mysql://localhost/supermercado"
+    val url = "jdbc:mysql://localhost/nogofat"
     val user = "root"
     val password = ""
    lateinit var conn: Connection
