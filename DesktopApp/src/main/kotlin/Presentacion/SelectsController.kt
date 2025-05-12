@@ -11,10 +11,7 @@ import javafx.scene.control.TextField
 import javafx.stage.Stage
 
 class SelectsController {
-
-    @FXML
-    private lateinit var areaSelect: TextArea
-
+    
     @FXML
     private lateinit var btnAdrian: Button
 
@@ -30,8 +27,7 @@ class SelectsController {
     @FXML
     private lateinit var btnManuel: Button
 
-    @FXML
-    private lateinit var txtCodigo: TextField
+
 
     @FXML
     fun onPressedAdrian(event: ActionEvent) {
