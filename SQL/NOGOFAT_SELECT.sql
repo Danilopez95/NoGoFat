@@ -1,5 +1,5 @@
 
-    -- 1. Obtener empleados con su información personal  
+    -- 1. Obtener empleados con su informaciï¿½n personal  
     SELECT P.NOMBRE, P.APELLIDO1, P.APELLIDO2, P.EMAIL, E.SALARIO, E.FECHA_CONTRATACION  
     FROM EMPLEADO E  
     JOIN PERSONA P ON E.DNI = P.DNI;  
@@ -14,7 +14,7 @@
     SELECT U.ID_USUARIO, P.NOMBRE, P.APELLIDO1, R.NOMBRE AS RUTINA  
     FROM USUARIO U  
     JOIN PERSONA P ON U.DNI = P.DNI  
-    JOIN USUARIO_RUTINA UR ON U.ID_USUARIO = UR.ID_USUARIO  
+    JOIN USUARIO_RUTINA UR ON U.ID_USUARIO = UR.ID_USUARIO      
     JOIN RUTINA R ON UR.ID_RUTINA = R.ID_RUTINA;  
     
     -- 4. Ver ejercicios dentro de cada rutina  
