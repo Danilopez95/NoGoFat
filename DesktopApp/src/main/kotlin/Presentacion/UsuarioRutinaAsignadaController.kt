@@ -16,18 +16,19 @@ class UsuarioRutinaAsignadaController {
 
     @FXML
     fun onPressedVerUsuario(event: ActionEvent) {
-        var listaTexto = mutableListOf<String>()
+        var texto = ""
         try {
-            var listaUsuarios = UsuarioRutinaDAOImple.getAllUsuarioRutina()
+           /* var listaUsuarios = UsuarioRutinaDAOImple.getAllUsuarioRutina()
             listaUsuarios.forEach {
                 listaTexto.add("$it\n")
-            }
+            }*/
+             texto = UsuarioRutinaDAOImple.getAllUsuarioRutina().joinToString ("\n"){ it.toString() }
 
         } catch (e: Exception) {
             e.printStackTrace()
         }
-        if (listaTexto.isNotEmpty()) {
-            areaUsuarioRutinaAsignada.text = listaTexto.toString()
+        if (texto.isNotEmpty()) {
+            areaUsuarioRutinaAsignada.text = texto
         } else {
             areaUsuarioRutinaAsignada.text = "No hay ningún resultado"
         }
