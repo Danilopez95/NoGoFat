@@ -1,9 +1,11 @@
+/*
 package BBDD
 
 import Negocio.Tabla
 import Negocio.Telefono
 import Utilities.*
-object TelefonoDAOImple:TelefonoDAO {
+
+object TelefonoDAOImple : TelefonoDAO {
     private val conexion = ConexionBBDD()
 
     override fun getAllTelefonos(): List<Telefono> {
@@ -15,11 +17,11 @@ object TelefonoDAOImple:TelefonoDAO {
 
 
         while (rs?.next() == true) {
-            val idtlf= rs.getInt(1,"id_telefono")
+            val idtlf = rs.getInt(1, "id_telefono")
             val dni = rs.getString(2, "dni")
             val numero = rs.getInt(3, "numero")
             val tipo = rs.getString(4, "tipo")
-            telefonos.add(Telefono(idtlf,dni,numero,tipo))
+            telefonos.add(Telefono(idtlf, dni, numero, tipo))
         }
         ps.close()
         conexion.desconectar()
@@ -27,3 +29,4 @@ object TelefonoDAOImple:TelefonoDAO {
     }
 }
 
+*/
