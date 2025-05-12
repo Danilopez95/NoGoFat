@@ -11,21 +11,8 @@ import javafx.scene.control.TextField
 import javafx.stage.Stage
 
 class SelectsController {
-    
-    @FXML
-    private lateinit var btnAdrian: Button
 
-    @FXML
-    private lateinit var btnAguila: Button
-
-    @FXML
-    private lateinit var btnAlvaro: Button
-
-    @FXML
-    private lateinit var btnDaniel: Button
-
-    @FXML
-    private lateinit var btnManuel: Button
+   
 
 
 
