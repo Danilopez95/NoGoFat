@@ -20,7 +20,7 @@ class UsuarioRutinaAsignadaController {
         try {
             var listaUsuarios = UsuarioRutinaDAOImple.getAllUsuarioRutina()
             listaUsuarios.forEach {
-                listaTexto.add(it.toString())
+                listaTexto.add("$it\n")
             }
 
         } catch (e: Exception) {

@@ -15,7 +15,7 @@ class UsuarioRutina{
     }
 
     override fun toString(): String {
-        return "$id_usuario, $nombrePersona, $apellido1, con $nombreRutina"
+        return "$id_usuario $nombrePersona $apellido1 con $nombreRutina"
     }
 
 
