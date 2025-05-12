@@ -1,5 +1,6 @@
 package Presentacion
 
+import BBDD.UsuarioRutinaDAOImple
 import javafx.event.ActionEvent
 import javafx.fxml.FXML
 import javafx.scene.control.Button
@@ -15,6 +16,10 @@ class UsuarioRutinaAsignadaController {
 
     @FXML
     fun onPressedVerUsuario(event: ActionEvent) {
+
+        var listaUsuarios = UsuarioRutinaDAOImple.getAllUsuarioRutina()
+
+
     }
 
 }
