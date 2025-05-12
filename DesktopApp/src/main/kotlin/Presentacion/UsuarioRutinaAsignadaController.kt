@@ -11,8 +11,7 @@ class UsuarioRutinaAsignadaController {
     @FXML
     private lateinit var areaUsuarioRutinaAsignada: TextArea
 
-    @FXML
-    private lateinit var buttonVerUsuarios: Button
+
 
     @FXML
     fun onPressedVerUsuario(event: ActionEvent) {

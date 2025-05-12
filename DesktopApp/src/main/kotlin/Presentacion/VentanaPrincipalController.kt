@@ -16,12 +16,7 @@ import javafx.scene.Scene
 
 
 class VentanaPrincipalController {
-
-    @FXML
-    private lateinit var btnClear: Button
-
-    @FXML
-    private lateinit var btnSelects: Button
+    
 
     @FXML
     private lateinit var comboTablas: ComboBox<Tabla>
