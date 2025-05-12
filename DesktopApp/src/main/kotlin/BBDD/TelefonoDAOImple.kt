@@ -25,3 +25,4 @@ object TelefonoDAOImple:TelefonoDAO {
         conexion.desconectar()
         return telefonos
     }
+
