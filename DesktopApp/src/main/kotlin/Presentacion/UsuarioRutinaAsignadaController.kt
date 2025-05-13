@@ -26,7 +26,7 @@ class UsuarioRutinaAsignadaController {
         } catch (e: Exception) {
             e.printStackTrace()
         }
-        if (texto.isNotEmpty()) {
+        if (texto.isNotBlank()) {
             areaUsuarioRutinaAsignada.text = texto
         } else {
             areaUsuarioRutinaAsignada.text = "No hay ningún resultado"

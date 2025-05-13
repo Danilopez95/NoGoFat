@@ -13,9 +13,9 @@ object SQL_Statements {
      * Select Alvaro
      */
 
-    const val SELECT_EMPLEADO_INFO = "SELECT P.NOMBRE, P.APELLIDO1, P.APELLIDO2, P.EMAIL, E.SALARIO, E.FECHA_CONTRATACION  \n" +
-            "    FROM EMPLEADO E  \n" +
-            "    JOIN PERSONA P ON E.DNI = P.DNI;"
+    const val SELECT_EMPLEADO_INFO = "SELECT P.NOMBRE, P.APELLIDO1, P.APELLIDO2, P.EMAIL, E.SALARIO, E.FECHA_CONTRATACION  " +
+            "    FROM EMPLEADO E " +
+            "    JOIN PERSONA P ON E.DNI = P.DNI;  "
     // const val SELECT_ADRIAN = "SELECT"
 
 }
