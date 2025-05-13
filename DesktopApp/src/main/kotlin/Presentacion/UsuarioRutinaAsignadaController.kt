@@ -34,23 +34,5 @@ class UsuarioRutinaAsignadaController {
         }
     }
 
-    @FXML
-    fun onPressedMonitor(event: ActionEvent) {
-        var texto = ""
-        try {
-            /* var listaUsuarios = UsuarioRutinaDAOImple.getAllUsuarioRutina()
-             listaUsuarios.forEach {
-                 listaTexto.add("$it\n")
-             }*/
-            texto = MonitorDAOImple.getAllMonitor().joinToString ("\n"){ it.toString() }
 
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
-        if (texto.isNotEmpty()) {
-            areaUsuarioRutinaAsignada.text = texto
-        } else {
-            areaUsuarioRutinaAsignada.text = "No hay ningún resultado"
-        }
-    }
 }
