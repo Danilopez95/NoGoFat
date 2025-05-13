@@ -4,6 +4,6 @@ import Negocio.Monitor
 
 interface MonitorDAO {
 
-   fun getAllMonitor(): List<Monitor>
+    fun getAllMonitor(): List<Monitor>
 
     }

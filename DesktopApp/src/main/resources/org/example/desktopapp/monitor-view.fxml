@@ -4,7 +4,7 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.desktopapp.monitor-view">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.desktopapp.MonitorController">
    <children>
       <ListView fx:id="txtMonitor" layoutX="119.0" layoutY="92.0" prefHeight="200.0" prefWidth="362.0" />
       <Button fx:id="btnMonitor" layoutX="377.0" layoutY="306.0" mnemonicParsing="false" onAction="#onPressedMonitor" text="Mostrar Monitor" />

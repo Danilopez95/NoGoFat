@@ -3,7 +3,7 @@ package BBDD
 import Negocio.Monitor
 import Utilities.SQL_Statements
 
-object MonitorDAOImple {
+object MonitorDAOImple: MonitorDAO {
     private var conexion = ConexionBBDD()
 
     override fun getAllMonitor(): List<Monitor> {
@@ -14,15 +14,16 @@ object MonitorDAOImple {
         while (preparedStatement.next()) {
             listaMonitor.add(
                 Monitor(
-                    preparedStatement.getString("NOMBRE"),
                     preparedStatement.getString("APELLIDO1"),
                     preparedStatement.getString("APELLIDO2"),
-                    preparedStatement.getInt("ID_MONITOR")
+                    preparedStatement.getInt("ID_MONITOR"),
+                    preparedStatement.getString("NOMBRE")
+
                 )
             )
         }
         statement.close()
         conexion.desconectar()
-        return Monitor
+        return listaMonitor
     }
 }

@@ -5,7 +5,7 @@ import javafx.fxml.FXML
 import javafx.scene.control.Button
 import javafx.scene.control.ListView
 
-class VentanaMonitorController {
+class MonitorController {
 
         @FXML
         private lateinit var btnMonitor: Button
