@@ -18,4 +18,6 @@ object SQL_Statements {
             "    JOIN PERSONA P ON E.DNI = P.DNI;"
     // const val SELECT_ADRIAN = "SELECT"
 
+    const val SELECT_ALL_CLASE_MONITOR = ""
+
 }
