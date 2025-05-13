@@ -1,19 +1,19 @@
 
     -- 1. Obtener empleados con su informaci�n personal  
     SELECT P.NOMBRE, P.APELLIDO1, P.APELLIDO2, P.EMAIL, E.SALARIO, E.FECHA_CONTRATACION  
-    FROM EMPLEADO E  
+    FROM EMPLEADO E  --Alvaro
     JOIN PERSONA P ON E.DNI = P.DNI;  
     
     -- 2. Listar monitores con sus datos personales  
     SELECT P.NOMBRE, P.APELLIDO1, P.APELLIDO2, M.ID_MONITOR  
-    FROM MONITOR M  
+    FROM MONITOR M  --Adri
     JOIN EMPLEADO E ON M.ID_EMPLEADO = E.ID_EMPLEADO  
     JOIN PERSONA P ON E.DNI = P.DNI;  
     
     -- 3. Mostrar usuarios con sus rutinas asignadas  
     SELECT U.ID_USUARIO, P.NOMBRE, P.APELLIDO1, R.NOMBRE AS RUTINA  
     FROM USUARIO U  
-    JOIN PERSONA P ON U.DNI = P.DNI  
+    JOIN PERSONA P ON U.DNI = P.DNI  --Dani
     JOIN USUARIO_RUTINA UR ON U.ID_USUARIO = UR.ID_USUARIO      
     JOIN RUTINA R ON UR.ID_RUTINA = R.ID_RUTINA;  
     
@@ -25,7 +25,7 @@
     
     -- 5. Mostrar clases con sus monitores  
     SELECT C.NOMBRE AS CLASE, M.ID_MONITOR, P.NOMBRE AS MONITOR  
-    FROM MONITOR_CLASE MC  
+    FROM MONITOR_CLASE MC  --Manu
     JOIN MONITOR M ON MC.ID_MONITOR = M.ID_MONITOR  
     JOIN EMPLEADO E ON M.ID_EMPLEADO = E.ID_EMPLEADO  
     JOIN PERSONA P ON E.DNI = P.DNI  
