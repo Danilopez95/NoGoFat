@@ -18,4 +18,9 @@ object SQL_Statements {
             "    JOIN PERSONA P ON E.DNI = P.DNI;"
     // const val SELECT_ADRIAN = "SELECT"
 
+    const val SELECT_ALL_MONITORES = "SELECT P.NOMBRE, P.APELLIDO1, P.APELLIDO2, M.ID_MONITOR  \n" +
+            "    FROM MONITOR M  \n" +
+            "    JOIN EMPLEADO E ON M.ID_EMPLEADO = E.ID_EMPLEADO  \n" +
+            "    JOIN PERSONA P ON E.DNI = P.DNI; "
+
 }
