@@ -2,5 +2,20 @@ package Utilities
 
 object SQL_Statements {
     const val SELECT_ALL_TABLES = "SHOW TABLES"
-    const val SELECT_ADRIAN = "SLECT"
+
+
+    /* SELECT DANI */
+
+    const val SELECT_ALL_TELEFONOS = "SELECT * FROM TELEFONO"
+    const val SELECT_ALL_USUARIOS_RUTINAS = "SELECT U.ID_USUARIO, P.NOMBRE, P.APELLIDO1, R.NOMBRE AS RUTINA      FROM USUARIO U      JOIN PERSONA P ON U.DNI = P.DNI      JOIN USUARIO_RUTINA UR ON U.ID_USUARIO = UR.ID_USUARIO      JOIN RUTINA R ON UR.ID_RUTINA = R.ID_RUTINA;  "
+
+    /**
+     * Select Alvaro
+     */
+
+    const val SELECT_EMPLEADO_INFO = "SELECT P.NOMBRE, P.APELLIDO1, P.APELLIDO2, P.EMAIL, E.SALARIO, E.FECHA_CONTRATACION  \n" +
+            "    FROM EMPLEADO E  \n" +
+            "    JOIN PERSONA P ON E.DNI = P.DNI;"
+    // const val SELECT_ADRIAN = "SELECT"
+
 }
