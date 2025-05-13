@@ -12,15 +12,10 @@ object EmpleadoDAOImple : EmpleadoDAO {
         var listaEmpleado = mutableListOf<Empleado>()
 
         while (preparedStatement.next()) {
-            var apellido = mutableListOf(
-                preparedStatement.getString("APELLIDO1"),
-                preparedStatement.getString("APELLIDO2")
-            )
-            var apellidos = apellido.joinToString { "\t" }
-
             listaEmpleado.add(
                 Empleado(
-                    apellidos,
+                    preparedStatement.getString("APELLIDO1"),
+                    preparedStatement.getString("APELLIDO2"),
                     preparedStatement.getString("EMAIL"),
                     preparedStatement.getDate("FECHA_CONTRATACION"),
                     preparedStatement.getString("NOMBRE"),
