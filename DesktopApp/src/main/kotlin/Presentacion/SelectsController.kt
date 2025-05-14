@@ -18,17 +18,56 @@ class SelectsController {
 
     @FXML
     fun onPressedAdrian(event: ActionEvent) {
-
+        try {
+            val loader =
+                FXMLLoader(
+                    SelectsController::class.java.getResource
+                        ("/org/example/desktopapp/monitor-view.fxml")
+                )
+            val root: Parent = loader.load()
+            val stage = Stage()
+            stage.title = "Selects datos monitores"
+            stage.scene = Scene(root)
+            stage.show()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
     }
 
     @FXML
     fun onPressedAguila(event: ActionEvent) {
-
+        try {
+            val loader =
+                FXMLLoader(
+                    SelectsController::class.java.getResource
+                        ("/org/example/desktopapp/empleadoInfo-view.fxml")
+                )
+            val root: Parent = loader.load()
+            val stage = Stage()
+            stage.title = "Selects información de los empleados"
+            stage.scene = Scene(root)
+            stage.show()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
     }
 
     @FXML
     fun onPressedAlvaro(event: ActionEvent) {
-
+        try {
+            val loader =
+                FXMLLoader(
+                    SelectsController::class.java.getResource
+                        ("/org/example/desktopapp/empleadoInfo-view.fxml")
+                )
+            val root: Parent = loader.load()
+            val stage = Stage()
+            stage.title = "Selects información de los empleados"
+            stage.scene = Scene(root)
+            stage.show()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
     }
 
     @FXML
@@ -54,5 +93,7 @@ class SelectsController {
     fun onPressedManuel(event: ActionEvent) {
 
     }
+
+
 
 }

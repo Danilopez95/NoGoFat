@@ -13,11 +13,14 @@ object SQL_Statements {
      * Select Alvaro
      */
 
-    const val SELECT_EMPLEADO_INFO = "SELECT P.NOMBRE, P.APELLIDO1, P.APELLIDO2, P.EMAIL, E.SALARIO, E.FECHA_CONTRATACION  \n" +
-            "    FROM EMPLEADO E  \n" +
-            "    JOIN PERSONA P ON E.DNI = P.DNI;"
+    const val SELECT_EMPLEADO_INFO = "SELECT P.NOMBRE, P.APELLIDO1, P.APELLIDO2, P.EMAIL, E.SALARIO, E.FECHA_CONTRATACION  " +
+            "    FROM EMPLEADO E " +
+            "    JOIN PERSONA P ON E.DNI = P.DNI;  "
     // const val SELECT_ADRIAN = "SELECT"
 
-    const val SELECT_ALL_CLASE_MONITOR = ""
+    const val SELECT_ALL_MONITORES = "SELECT P.NOMBRE, P.APELLIDO1, P.APELLIDO2, M.ID_MONITOR  \n" +
+            "    FROM MONITOR M  \n" +
+            "    JOIN EMPLEADO E ON M.ID_EMPLEADO = E.ID_EMPLEADO  \n" +
+            "    JOIN PERSONA P ON E.DNI = P.DNI; "
 
 }
