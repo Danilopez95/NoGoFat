@@ -1,0 +1,63 @@
+
+    -- 1. Obtener empleados con su informaci�n personal  
+    SELECT P.NOMBRE, P.APELLIDO1, P.APELLIDO2, P.EMAIL, E.SALARIO, E.FECHA_CONTRATACION  
+    FROM EMPLEADO E  --Alvaro
+    JOIN PERSONA P ON E.DNI = P.DNI;  
+    
+    -- 2. Listar monitores con sus datos personales  
+    SELECT P.NOMBRE, P.APELLIDO1, P.APELLIDO2, M.ID_MONITOR  
+    FROM MONITOR M  --Adri
+    JOIN EMPLEADO E ON M.ID_EMPLEADO = E.ID_EMPLEADO  
+    JOIN PERSONA P ON E.DNI = P.DNI;  
+    
+    -- 3. Mostrar usuarios con sus rutinas asignadas  
+    SELECT U.ID_USUARIO, P.NOMBRE, P.APELLIDO1, R.NOMBRE AS RUTINA  
+    FROM USUARIO U  
+    JOIN PERSONA P ON U.DNI = P.DNI  --Dani
+    JOIN USUARIO_RUTINA UR ON U.ID_USUARIO = UR.ID_USUARIO      
+    JOIN RUTINA R ON UR.ID_RUTINA = R.ID_RUTINA;  
+    
+    -- 4. Ver ejercicios dentro de cada rutina  
+    SELECT R.NOMBRE AS RUTINA, E.NOMBRE AS EJERCICIO, RE.SERIES, RE.REPETICIONES, RE.DIA_SEMANA  
+    FROM RUTINA_EJERCICIO RE  
+    JOIN RUTINA R ON RE.ID_RUTINA = R.ID_RUTINA  
+    JOIN EJERCICIO E ON RE.ID_EJERCICIO = E.ID_EJERCICIO;  
+    
+    -- 5. Mostrar clases con sus monitores  
+    SELECT C.NOMBRE AS CLASE, M.ID_MONITOR, P.NOMBRE AS MONITOR  
+    FROM MONITOR_CLASE MC  --Manu
+    JOIN MONITOR M ON MC.ID_MONITOR = M.ID_MONITOR  
+    JOIN EMPLEADO E ON M.ID_EMPLEADO = E.ID_EMPLEADO  
+    JOIN PERSONA P ON E.DNI = P.DNI  
+    JOIN CLASE C ON MC.ID_CLASE = C.ID_CLASE;  
+    
+    -- 6. Ver horarios de empleados  
+    SELECT P.NOMBRE, P.APELLIDO1, H.TIPO AS TURNO  
+    FROM HORARIO H  
+    JOIN EMPLEADO E ON H.ID_EMPLEADO = E.ID_EMPLEADO  
+    JOIN PERSONA P ON E.DNI = P.DNI;  
+    
+--Lista de todas las personas registradas
+SELECT DNI, NOMBRE, APELLIDO1, APELLIDO2, EMAIL
+FROM PERSONA;
+
+--Lista de empleados y su salario (sin importar si son monitores o no)
+SELECT E.ID_EMPLEADO, P.NOMBRE, P.APELLIDO1, E.SALARIO
+FROM EMPLEADO E
+JOIN PERSONA P ON E.DNI = P.DNI;
+
+--Todas las rutinas creadas (aunque no las tenga nadie)
+SELECT ID_RUTINA, NOMBRE, DESCRIPCION
+FROM RUTINA;
+
+--Clases existentes (con o sin monitores)
+SELECT ID_CLASE, NOMBRE, DESCRIPCION, FECHA_INICIO, FECHA_FIN
+FROM CLASE;
+
+--Empleados que son monitores (aunque no tengan clase asignada)
+SELECT M.ID_MONITOR, P.NOMBRE, P.APELLIDO1
+FROM MONITOR M
+JOIN EMPLEADO E ON M.ID_EMPLEADO = E.ID_EMPLEADO
+JOIN PERSONA P ON E.DNI = P.DNI;
+    
+    
