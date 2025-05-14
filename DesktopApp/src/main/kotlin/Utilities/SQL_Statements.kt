@@ -24,7 +24,7 @@ object SQL_Statements {
             "    JOIN PERSONA P ON E.DNI = P.DNI; "
 
     const val SELECT_CLASE_MONITOR = "  SELECT C.NOMBRE AS CLASE, M.ID_MONITOR, P.NOMBRE AS MONITOR  \n" +
-            "    FROM MONITOR_CLASE MC  --Manu\n" +
+            "    FROM MONITOR_CLASE MC \n" +
             "    JOIN MONITOR M ON MC.ID_MONITOR = M.ID_MONITOR  \n" +
             "    JOIN EMPLEADO E ON M.ID_EMPLEADO = E.ID_EMPLEADO  \n" +
             "    JOIN PERSONA P ON E.DNI = P.DNI  \n" +

@@ -14,9 +14,9 @@ object UsuarioRutinaDAOImple : UsuarioRutinaDAO {
         while (preparedStatement.next()) {
             listaUsuarios.add(
                 UsuarioRutina(
+                    preparedStatement.getString("APELLIDO1"),
                     preparedStatement.getInt("ID_USUARIO"),
                     preparedStatement.getString("NOMBRE"),
-                    preparedStatement.getString("APELLIDO1"),
                     preparedStatement.getString("RUTINA")
                 )
             )

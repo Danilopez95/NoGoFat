@@ -12,16 +12,16 @@ class ClaseMonitorInfoController {
     private lateinit var btnGetClaseMonitor: Button
 
     @FXML
-    private lateinit var txtClaseMonitor: TextArea
+    private lateinit var txtClaseMonitorInfo: TextArea
 
     @FXML
     fun onPressedGetClaseMonitor(event: ActionEvent){
         try {
             var cadenaTexto = ClaseMonitorDAOImple.getAllClaseMonitor().joinToString("\n"){it.toString()}
             if (cadenaTexto.isNotBlank()){
-                txtClaseMonitor.text = cadenaTexto
+                txtClaseMonitorInfo.text = cadenaTexto
             } else {
-                txtClaseMonitor.text = "No se han encontrado Resultado"
+                txtClaseMonitorInfo.text = "No se han encontrado Resultado"
             }
         } catch (e: Exception){
             e.printStackTrace()

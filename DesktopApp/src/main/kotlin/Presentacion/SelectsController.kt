@@ -91,7 +91,20 @@ class SelectsController {
 
     @FXML
     fun onPressedManuel(event: ActionEvent) {
-
+        try {
+            val loader =
+                FXMLLoader(
+                    SelectsController::class.java.getResource
+                        ("/org/example/desktopapp/claseMonitorInfo-view.fxml")
+                )
+            val root: Parent = loader.load()
+            val stage = Stage()
+            stage.title = "Selects datos monitores"
+            stage.scene = Scene(root)
+            stage.show()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
     }
 
 
