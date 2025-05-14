@@ -1,9 +1,10 @@
-/*
+
 package BBDD
 
 import Negocio.Tabla
 import Negocio.Telefono
 import Utilities.*
+import java.sql.*
 
 object TelefonoDAOImple : TelefonoDAO {
     private val conexion = ConexionBBDD()
@@ -16,17 +17,21 @@ object TelefonoDAOImple : TelefonoDAO {
         var telefonos = mutableListOf<Telefono>()
 
 
-        while (rs?.next() == true) {
-            val idtlf = rs.getInt(1, "id_telefono")
-            val dni = rs.getString(2, "dni")
-            val numero = rs.getInt(3, "numero")
-            val tipo = rs.getString(4, "tipo")
+        while (rs.next()) {
+            val idtlf = rs.getInt(1)
+            val dni = rs.getString(2)
+            val numero = rs.getInt(3)
+            val tipo = rs.getString(4)
             telefonos.add(Telefono(idtlf, dni, numero, tipo))
         }
         ps.close()
         conexion.desconectar()
         return telefonos
     }
+
+    override fun selectAllFrom(Telefono: String): List<String> {
+        TODO("Not yet implemented")
+    }
 }
 
-*/
+
