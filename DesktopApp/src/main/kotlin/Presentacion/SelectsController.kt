@@ -40,11 +40,11 @@ class SelectsController {
             val loader =
                 FXMLLoader(
                     SelectsController::class.java.getResource
-                        ("/org/example/desktopapp/empleadoInfo-view.fxml")
+                        ("/org/example/desktopapp/rutinaEjercicio-view.fxml")
                 )
             val root: Parent = loader.load()
             val stage = Stage()
-            stage.title = "Selects información de los empleados"
+            stage.title = "RUTINAS CON SUS EJERCICIOS"
             stage.scene = Scene(root)
             stage.show()
         } catch (e: Exception) {
