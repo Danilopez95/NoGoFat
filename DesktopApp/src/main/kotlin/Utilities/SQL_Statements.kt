@@ -30,4 +30,9 @@ object SQL_Statements {
             "    JOIN PERSONA P ON E.DNI = P.DNI  \n" +
             "    JOIN CLASE C ON MC.ID_CLASE = C.ID_CLASE; "
 
+    const val SELECT_EJERCICIO_RUTINA = "SELECT R.NOMBRE AS RUTINA, E.NOMBRE AS EJERCICIO, RE.SERIES, RE.REPETICIONES, RE.DIA_SEMANA  \n" +
+            "    FROM RUTINA_EJERCICIO RE  \n" +
+            "    JOIN RUTINA R ON RE.ID_RUTINA = R.ID_RUTINA  \n" +
+            "    JOIN EJERCICIO E ON RE.ID_EJERCICIO = E.ID_EJERCICIO; "
+
 }
