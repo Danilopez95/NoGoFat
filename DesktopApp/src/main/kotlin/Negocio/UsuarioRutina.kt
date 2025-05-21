@@ -1,22 +1,28 @@
 package Negocio
 
-class UsuarioRutina{
+class UsuarioRutina {
+    var id_usuario:Int
+    var nombre:String
+    var apellido1:String
+    var rutina:String
 
-    var id_usuario:Int = 0
-    var nombrePersona:String = ""
-    var apellido1:String = ""
-    var nombreRutina:String = ""
-
-    constructor(id_usuario: Int, nombrePersona: String, apellido1: String, nombreRutina: String) {
-        this.id_usuario = id_usuario
-        this.nombrePersona = nombrePersona
+    constructor(apellido1: String, id_usuario: Int, nombre: String, rutina: String) {
         this.apellido1 = apellido1
-        this.nombreRutina = nombreRutina
+        this.id_usuario = id_usuario
+        this.nombre = nombre
+        this.rutina = rutina
     }
 
     override fun toString(): String {
-        return "$id_usuario, $nombrePersona, $apellido1, con $nombreRutina"
+        return "$id_usuario, $apellido1, $nombre, rutina:$rutina"
     }
 
 
+    /**
+     * UsuarioRutina(
+     *                     preparedStatement.getInt("ID_USUARIO"),
+     *                     preparedStatement.getString("NOMBRE"),
+     *                     preparedStatement.getString("APELLIDO1"),
+     *                     preparedStatement.getString("RUTINA")
+     */
 }
